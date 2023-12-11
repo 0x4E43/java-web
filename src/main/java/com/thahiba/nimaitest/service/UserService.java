@@ -32,7 +32,8 @@ public class UserService {
         try {
             // This function will return list of all users
             List<UserEntity> userEntityList = userDAO.findAll();
-            //This comment should be added to test branch not master
+            // This comment should be added to test branch not master
+            // Example of git stash
             return userEntityList;
         } catch (Exception e) {
             e.printStackTrace();
