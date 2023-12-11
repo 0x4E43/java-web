@@ -14,18 +14,21 @@ public class UserController {
 
     @Autowired
     UserService userService;
+
     @PostMapping(path = "/v1/create-user")
-    public UserEntity createUser(@RequestBody UserDTO dto){
+    public UserEntity createUser(@RequestBody UserDTO dto) {
+        // test controller
         return userService.createUser(dto);
     }
 
+    //This method returns all users
     @GetMapping(path = "/v1/get-all")
-    public List<UserEntity> getAllUsers(){
+    public List<UserEntity> getAllUsers() {
         return userService.getAllUsers();
     }
 
     @GetMapping
-    public String sayHello(){
+    public String sayHello() {
         return "Hello";
     }
 }
