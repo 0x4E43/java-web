@@ -32,6 +32,7 @@ public class UserService {
         try {
             // This function will return list of all users
             List<UserEntity> userEntityList = userDAO.findAll();
+            //This comment should be added to test branch not master
             return userEntityList;
         } catch (Exception e) {
             e.printStackTrace();
