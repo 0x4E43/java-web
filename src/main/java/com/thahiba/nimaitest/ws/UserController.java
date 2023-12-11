@@ -21,6 +21,7 @@ public class UserController {
         return userService.createUser(dto);
     }
 
+    //This method returns all users
     @GetMapping(path = "/v1/get-all")
     public List<UserEntity> getAllUsers() {
         return userService.getAllUsers();
