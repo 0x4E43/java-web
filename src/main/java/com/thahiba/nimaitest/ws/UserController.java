@@ -27,6 +27,7 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+    //This method returs hello message
     @GetMapping
     public String sayHello() {
         return "Hello";
